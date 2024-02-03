@@ -1,0 +1,11 @@
+$nomention
+$onlyIf[$scriptLanguage==BDScript 2;⚠️ Change the "Scripting Language" to **BDScript 2**]
+$onlyPerms[ban;⚠️ You don't have "Ban" permissions!]
+$onlyBotPerms[ban;⚠️ I don't have "Ban" permissions!]
+$argsCheck[>1;Usage `?unban <userID>` ( Unban a user from this server )]
+$onlyIf[$userExists[$message[1]]==true;⚠️ Provide a valid userID to unban!]
+$onlyIf[$isBanned[$message[1]]==true;⚠️ That user aren't banned!]
+$reply $botTyping
+ Unbanned **$username[$message[1]]#$discriminator[$message[1]]**
+$unbanID[$message[1]]
+$onlyIf[$scriptLanguage==BDScript 2;⚠️ Change the "Scripting Language" to **BDScript 2**]
