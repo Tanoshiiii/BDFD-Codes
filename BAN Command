@@ -1,0 +1,12 @@
+$nomention
+$suppressErrors
+$argsCheck[>1;$randomText[> Huh? I didn't understand. Check your message. > Type: **"?ban @user".**;> What? Check your message. > Type **"?ban @user".**]] 
+$botTyping
+$onlyPerms[ban;> 🚫 | You need permission to use the `BAN` command]
+$onlyBotPerms[ban;> 🚫 | To execute this command, I need a role that contains ban permission.]
+$color[000000]
+$author[$username] $authorIcon[$authorAvatar]
+$description[**  $username[$mentioned[1;yes]]** Has been banned. 
+  Reason: **$noMentionMessage**] $thumbnail[$userAvatar[$mentioned[1;yes]]] 
+$footer[$serverName[$guildID] | $addTimestamp]
+$ban[$noMentionMessage]
