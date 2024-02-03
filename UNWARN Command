@@ -1,0 +1,23 @@
+$nomention
+
+$onlyPerms[managemessages;❌ | <@$authorID> you need the `manage messages` permissions]
+
+$title[Someone Has be warned!]
+$color[000000]
+
+$thumbnail[$authorAvatar]
+
+$footerIcon[$authorAvatar]
+$footer[Warned at $hour:$minute:$second]
+
+$description[User: <@$mentioned[1]>
+
+Staff: <@$authorID>
+
+Current Warns: `$sum[$getUserVar[warns;$mentioned[1]];1]`
+
+What he has done: $if[$noMentionMessage!=]$noMentionMessage$elseNo Reason Provided$endif]
+
+$setUserVar[warns;$sum[$getUserVar[warns;$mentioned[1]];1];$mentioned[1]]
+
+$argsCheck[>1;Please Mention A User Then Reason:]
